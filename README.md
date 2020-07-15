@@ -15,12 +15,5 @@ Place a request to borrow a book.
 Add new books into the system.
 Update description about books in the system.
 Record the borrower details.
-- Clerk:
-Search books.
-View all books details in the system.
-Manage the borrower of the book.
-- Administrator:
-Add new librarians that can access the system.
-Add new clerks.
-Manage the system.
+
  
