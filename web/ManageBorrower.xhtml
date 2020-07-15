@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+ 
+    
+        
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Manage Borrower</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+            <h:form>
+            <p:graphicImage value="lib3.jpg" width="1350" height="200"/>
+            <center><h1>List Of Borrower</h1></center>
+            <br/>   
+            
+        <p:growl id="msgs" showDetail="true" />
+ 
+        <p:panel id="basic" header="Borrower">
+            
+            
+            <h:panelGrid columns="2" cellpadding="10">
+                <center><p:graphicImage value="book.jpg" width="200" height="300" /></center>
+                <h:outputText value="Title: Software Engineering 6th Edition"/>
+            </h:panelGrid>
+            
+            <h:panelGrid columns="2" cellpadding="10">
+                <center><h2>List Of Pending Book Request</h2></center>
+                
+                <h4>Ali bin Abu</h4>
+                <h4>Software Engineering 6th Edition</h4>
+                
+            </h:panelGrid>
+            
+            <p:commandButton  value="Approve" />
+            <p:commandButton  value="Reject" /> 
+            
+            
+            <h:panelGrid columns="2" cellpadding="10">
+                
+                <h4>Alia binti Hisham</h4>
+                <h4>Software Engineering 6th Edition</h4>
+                
+            </h:panelGrid>
+            
+            <p:commandButton  value="Approve" />
+            <p:commandButton  value="Reject" />
+            
+            
+           
+            
+         
+        </p:panel>   
+            
+               
+                
+
+             
+            </h:form>
+        </h:body>
+
+    </f:view>
+</html>
+
+
+
+
+ 
