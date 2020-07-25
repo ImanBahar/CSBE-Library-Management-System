@@ -7,13 +7,18 @@ This is a project for CBSE subjects.
 - This system will enable both library staff and students to have direct access towards the books in the library. 
 
 People who interact with this system
+
+- Librarian:
+Add new books into the system.
+Manage book info in the system.
+Record the borrower details and add borrower.
+
+
 - Borrower:
 Search for books by using titles following the categories.
 View available books in the library.
 Place a request to borrow a book.
-- Librarian:
-Add new books into the system.
-Update description about books in the system.
-Record the borrower details.
+
+
 
  
