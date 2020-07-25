@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:head>
+        <title>Update Book Detail</title>
+    </h:head>
+    <h:body>
+        <p:graphicImage value="lib3.jpg" width="1350" height="200"/>
+        
+            <br/>   
+            
+                    <center><h1>Insert Your Details to Borrow Books</h1></center>
+            <br/>   
+                    
+            <f:view>
+
+
+                <h:form>
+                    <center>
+                    <h1><h:outputText value="Insert Your Details"/></h1>
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <h:outputLabel value="Matric Number:" for="matricnumber" />
+                        <p:inputText id="matricnumber" value="#{borrowerController.borrower.matricnumber}" title="Matricnumber" required="true" requiredMessage="The Matricnumber field is required."/>
+                        
+                        <h:outputLabel value="Name:" for="borrowername" />
+                        <p:inputText id="borrowername" value="#{borrowerController.borrower.borrowername}" title="Borrowername" />
+                        <h:outputLabel value="Book Title:" for="booktitle" />
+                        <p:inputText id="booktitle" value="#{borrowerController.borrower.booktitle}" title="Booktitle" />
+                        
+                        <p:commandButton value="Submit" action="#{borrowerController.insert()}"/>
+                    </h:panelGrid>
+                    </center>
+                </h:form>
+            </f:view>
+
+
+    </h:body>
+</html>
+

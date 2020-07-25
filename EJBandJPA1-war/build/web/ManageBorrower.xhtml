@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    
+      
+    <h:head>
+        <title>MyLib Books</title>
+    </h:head>
+    <h:body>
+        <p:graphicImage value="lib3.jpg" width="1350" height="200"/>
+            
+            <br/>  
+            
+        <h:form>
+            <f:view>
+
+
+                <h:form>
+                    <center>
+                        
+                    <h1><h:outputText value="Manage Book Borrowers"/></h1>
+                    
+                    
+                    <br></br>
+                    <br></br>
+                    
+                    
+                    <!--BORROWER-->
+
+
+                    
+                        <h1><h:outputText value="List"/></h1>
+                        <p:dataTable value="#{borrowerController.findAll()}" var="item" >
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Matric number"/>
+                                </f:facet>
+                                <h:outputText value="#{item.matricnumber}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Name"/>
+                                </f:facet>
+                                <h:outputText value="#{item.borrowername}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Book title"/>
+                                </f:facet>
+                                <h:outputText value="#{item.booktitle}"/>
+                            </p:column>
+                            
+                            
+                            
+                        <p:column>
+                            <f:facet name="header">
+                                <h:outputText value="Action"/>
+                            </f:facet>
+                            <p:commandButton value="Reject" action="#{borrowerController.delete(item)}" onclick="return confirm('Are You Sure to Reject this Borrower?')"/>
+                        </p:column>
+                        
+                        <p:column>
+                            <f:facet name="header">
+                                <h:outputText value="Action"/>
+                            </f:facet>
+                            <p:commandButton value="Approve" action="#{borrowerController.delete(item)}"/>
+                        </p:column>
+                        </p:dataTable>
+                   
+
+                    
+                    
+                        
+                        
+                        
+                        
+                    </center>
+                </h:form>
+            </f:view>
+
+        </h:form>
+    </h:body>
+</html>
+
+
