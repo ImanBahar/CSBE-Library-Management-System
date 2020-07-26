@@ -9,16 +9,17 @@ This is a project for CBSE subjects.
 People who interact with this system
 
 - Librarian:
-Add new books into the system.
-Manage book info in the system.
-Record the borrower details and add borrower.
-
+Add new books and delete books.
+Manage book info and update it in the system.
+Manage borrowers.
 
 - Borrower:
-Search for books by using titles following the categories.
 View available books in the library.
 Place a request to borrow a book.
 
+- We developed this system by using JavaServer Faces (JSF) Web Application Framework with PrimeFaces UI Framework, EnterpriseJavaBean (EJB) component technologies, publishing stateless session beans as Web Services and persistence object models which is Java Persistsence API (JPA) entities. 
+- The web solution is going to be deployed into an application server (GlassFish) and data is store in a database server (Java DB). 
+- The third party component incorporated in this MyLib system is Google Maps. Users can use this to see the exact location of the library.
 
 
 Our Demo Video:-
