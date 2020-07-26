@@ -17,7 +17,8 @@ Manage borrowers.
 View available books in the library.
 Place a request to borrow a book.
 
-- We developed this system by using JavaServer Faces (JSF) Web Application Framework with PrimeFaces UI Framework, EnterpriseJavaBean (EJB) component technologies, publishing stateless session beans as Web Services and persistence object models which is Java Persistsence API (JPA) entities. 
+MyLib system Development:
+- We developed this web-based system by using JavaServer Faces (JSF) Web Application Framework with PrimeFaces UI Framework, EnterpriseJavaBean (EJB) component technologies, publishing stateless session beans as Web Services and persistence object models which is Java Persistsence API (JPA) entities. 
 - The web solution is going to be deployed into an application server (GlassFish) and data is store in a database server (Java DB). 
 - The third party component incorporated in this MyLib system is Google Maps. Users can use this to see the exact location of the library.
 
